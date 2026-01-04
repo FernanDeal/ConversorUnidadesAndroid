@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F0F0F0">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Unidades"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce el valor"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona conversión:"
+        android:layout_marginBottom="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/rbMetrosKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metros a Kilómetros"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbKmMetros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilómetros a Metros"/>
+
+        <RadioButton
+            android:id="@+id/rbGramosKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gramos a Kilogramos"/>
+
+        <RadioButton
+            android:id="@+id/rbKgGramos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilogramos a Gramos"/>
+
+        <RadioButton
+            android:id="@+id/rbCelsiusFahr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius a Fahrenheit"/>
+
+        <RadioButton
+            android:id="@+id/rbFahrCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit a Celsius"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Calcular"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mostrar"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El resultado aparecerá aquí"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="15dp"/>
+
+</LinearLayout>
